@@ -1,0 +1,40 @@
+.auth-choice-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.auth-choice-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+.auth-btn {
+  width: 220px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  padding: 0.9rem 0;
+  border: 2px solid #1563e6;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  outline: none;
+}
+.auth-btn.signup {
+  background: #1563e6;
+  color: #fff;
+  border: 2px solid #1563e6;
+}
+.auth-btn.signup:hover {
+  background: #0039a6;
+}
+.auth-btn.login {
+  background: #fff;
+  color: #1563e6;
+  border: 2px solid #1563e6;
+}
+.auth-btn.login:hover {
+  background: #e6f0ff;
+}

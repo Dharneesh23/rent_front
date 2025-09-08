@@ -1,0 +1,261 @@
+.gfrd-bg {
+  min-height: 100vh;
+  background: #18181c;
+  color: #fff;
+  padding: 0 0 3rem 0;
+}
+.gfrd-header {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 2rem 1.5rem 2rem;
+  letter-spacing: 1px;
+}
+
+.gfrd-refresh-btn {
+  padding: 0.7rem 1.2rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.gfrd-refresh-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+.gfrd-filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.gfrd-filters select, .gfrd-filters input {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background: #23232a;
+  color: #fff;
+  outline: none;
+}
+.gfrd-listings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.gfrd-listing-card {
+  background: #23232a;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #0005;
+  width: 260px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.gfrd-listing-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px #0039a6cc;
+}
+.gfrd-listing-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}
+.gfrd-listing-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.gfrd-listing-meta {
+  font-size: 0.98rem;
+  color: #b3b3c6;
+  margin-bottom: 0.2rem;
+}
+.gfrd-listing-price {
+  font-size: 1.1rem;
+  color: #00ff99;
+  margin-bottom: 0.7rem;
+}
+.gfrd-view-btn {
+  background: #0039a6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.18s;
+}
+.gfrd-view-btn:hover {
+  background: #1563e6;
+}
+.gfrd-modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gfrd-modal {
+  background: #23232a;
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 400px;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 8px 32px #000a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gfrd-modal-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}
+.gfrd-modal-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.gfrd-modal-meta {
+  font-size: 1rem;
+  color: #b3b3c6;
+  margin-bottom: 0.2rem;
+}
+.gfrd-modal-price {
+  font-size: 1.1rem;
+  color: #00ff99;
+  margin-bottom: 0.7rem;
+}
+.gfrd-modal-desc {
+  margin-bottom: 0.7rem;
+}
+.gfrd-modal-owner {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.7rem;
+}
+.gfrd-modal-reviews {
+  font-size: 0.98rem;
+  color: #b3b3c6;
+  margin-bottom: 0.7rem;
+}
+.gfrd-modal-review {
+  margin-left: 1rem;
+}
+.gfrd-contact-btn, .gfrd-book-btn {
+  background: #00ff99;
+  color: #18181c;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  transition: background 0.18s;
+}
+.gfrd-contact-btn:hover, .gfrd-book-btn:hover {
+  background: #00cc7a;
+}
+.gfrd-close-btn {
+  background: #23232a;
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  transition: background 0.18s, color 0.18s;
+}
+.gfrd-close-btn:hover {
+  background: #fff;
+  color: #23232a;
+}
+.gfrd-login-box {
+  background: #23232a;
+  border-radius: 18px;
+  padding: 2.5rem 2.5rem;
+  min-width: 320px;
+  max-width: 400px;
+  color: #fff;
+  margin: 6rem auto 0 auto;
+  text-align: center;
+  box-shadow: 0 8px 32px #000a;
+}
+.gfrd-login-btn {
+  background: #0039a6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  transition: background 0.18s;
+}
+.gfrd-login-btn:hover {
+  background: #1563e6;
+}
+.gfrd-my-rentals {
+  margin: 2.5rem auto 0 auto;
+  max-width: 600px;
+  background: #23232a;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #0005;
+  padding: 1.2rem 2rem;
+}
+.gfrd-my-rental-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+.gfrd-feedback-btn {
+  background: #fff;
+  color: #0039a6;
+  border: 2px solid #0039a6;
+  border-radius: 8px;
+  padding: 0.4rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background 0.18s, color 0.18s;
+}
+.gfrd-feedback-btn:hover {
+  background: #0039a6;
+  color: #fff;
+}
+.gfrd-feedback-input {
+  width: 100%;
+  min-height: 70px;
+  border-radius: 8px;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  background: #18181c;
+  color: #fff;
+  resize: vertical;
+}

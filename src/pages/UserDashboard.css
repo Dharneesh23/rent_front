@@ -1,0 +1,511 @@
+/* UserDashboard.css */
+.user-dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 20px;
+}
+
+.user-dashboard-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  color: white;
+}
+
+/* Header */
+.user-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.user-dashboard-title h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.user-dashboard-title p {
+  margin: 5px 0 0 0;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+.user-dashboard-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.user-dashboard-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.add-btn {
+  background: #28a745;
+  color: white;
+}
+
+.add-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Stats Cards */
+.user-dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.user-stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-stat-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  opacity: 0.8;
+  color: #00d4ff;
+}
+
+.user-stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Tabs */
+.user-dashboard-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.user-tab {
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.user-tab:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.user-tab.active {
+  background: #00d4ff;
+  color: #1e3c72;
+  font-weight: bold;
+}
+
+/* Content */
+.user-dashboard-content {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+/* No Vehicles State */
+.user-no-vehicles {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.user-no-vehicles h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+.user-no-vehicles p {
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+/* Vehicles Grid */
+.user-vehicles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.user-vehicle-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.user-vehicle-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-vehicle-status {
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.user-vehicle-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.user-vehicle-details {
+  padding: 20px;
+}
+
+.user-vehicle-details h3 {
+  margin: 0 0 15px 0;
+  color: #00d4ff;
+  font-size: 1.3rem;
+}
+
+.user-vehicle-details p {
+  margin: 8px 0;
+  opacity: 0.9;
+}
+
+.user-rejection-reason {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(220, 53, 69, 0.2);
+  border-radius: 8px;
+  color: #ff6b6b;
+  border-left: 3px solid #dc3545;
+}
+
+.user-vehicle-actions {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.user-action-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Earnings Section */
+.user-earnings-section h3 {
+  margin-bottom: 20px;
+  color: #00d4ff;
+  font-size: 1.5rem;
+}
+
+.user-earnings-placeholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.user-earnings-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-earnings-card h4 {
+  margin: 0 0 15px 0;
+  color: #00d4ff;
+}
+
+.user-earnings-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Modal */
+.user-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.user-modal {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-modal-header h2 {
+  margin: 0;
+  color: #00d4ff;
+  font-size: 1.8rem;
+}
+
+.user-modal-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.user-modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Form */
+.user-add-form {
+  padding: 30px;
+}
+
+.user-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.user-form-group {
+  margin-bottom: 20px;
+}
+
+.user-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #00d4ff;
+  font-weight: 500;
+}
+
+.user-form-group input,
+.user-form-group select,
+.user-form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.user-form-group input::placeholder,
+.user-form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.user-form-group input:focus,
+.user-form-group select:focus,
+.user-form-group textarea:focus {
+  outline: none;
+  border-color: #00d4ff;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.2);
+}
+
+/* Image Preview */
+.user-image-preview {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.user-image-item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.user-image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-remove-image {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Actions */
+.user-form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-form-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #545b62;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-dashboard {
+    padding: 15px;
+  }
+  
+  .user-dashboard-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .user-dashboard-title h1 {
+    font-size: 2rem;
+  }
+  
+  .user-form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-vehicles-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-modal {
+    width: 95%;
+    margin: 20px;
+  }
+  
+  .user-form-actions {
+    flex-direction: column;
+  }
+}

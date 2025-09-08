@@ -1,0 +1,98 @@
+
+.onboarding-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+.onboarding-logo-overlay {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  pointer-events: none;
+}
+.onboarding-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  background: #fff;
+  padding: 8px;
+}
+.onboarding-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+  z-index: 1;
+}
+.onboarding-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  text-align: center;
+  z-index: 2;
+  padding: 0 2rem;
+}
+.onboarding-content h2 {
+  font-size: 2.2rem;
+  margin: 0.5rem 0 0.2rem 0;
+}
+.onboarding-content h4 {
+  font-size: 1.2rem;
+  margin: 0.2rem 0 0.5rem 0;
+  color: #ffd700;
+}
+.onboarding-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.onboarding-indicators {
+  margin-bottom: 1rem;
+}
+.onboarding-indicators span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.4;
+}
+.onboarding-indicators .active {
+  background: #007bff;
+  opacity: 1;
+}
+.onboarding-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.skip-btn, .next-btn, .get-started-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  transition: background 0.2s;
+}
+.skip-btn {
+  background: #444;
+}
+.skip-btn:hover, .next-btn:hover, .get-started-btn:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,109 @@
+.dashboard-content-area {
+  /* Hide vertical scrollbar for all browsers */
+  scrollbar-width: none; /* Firefox */
+}
+.dashboard-content-area::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.dashboard-main-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(120deg, #0f2027 0%, #203a43 60%, #2c5364 100%);
+}
+
+.dashboard-content-area {
+  flex: 1;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  background: rgba(20, 24, 34, 0.98);
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-welcome h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.dashboard-widgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.dashboard-widget-card {
+  background: linear-gradient(120deg, #232b3e 60%, #1a222f 100%);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(0,123,255,0.10), 0 1.5px 8px rgba(0,0,0,0.04);
+  padding: 2.2rem 2.5rem 1.5rem 2.5rem;
+  min-width: 320px;
+  max-width: 370px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  position: relative;
+  z-index: 1;
+  border: 1.5px solid #232b3e;
+  overflow: hidden;
+}
+.dashboard-widget-card:hover {
+  box-shadow: 0 12px 40px rgba(0,123,255,0.18), 0 2px 12px rgba(0,0,0,0.07);
+  transform: translateY(-6px) scale(1.035);
+  background: linear-gradient(120deg, #232b3e 80%, #007bff 100%);
+}
+.widget-icon {
+  font-size: 2.7rem;
+  margin-right: 1.5rem;
+  color: #00c6ff;
+  filter: drop-shadow(0 2px 8px #007bff33);
+}
+.widget-info h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  color: #00c6ff;
+  font-weight: 600;
+}
+.widget-info p {
+  font-size: 1.05rem;
+  color: #e0eaff;
+  margin-bottom: 1.2rem;
+}
+.dashboard-btn {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dashboard-btn:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #00aaff 100%);
+}
+.dashboard-btn {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dashboard-btn:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #00aaff 100%);
+}
